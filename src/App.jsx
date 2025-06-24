@@ -4,9 +4,11 @@ import Home from './component/Home'
 import ExploreCareer from './component/ExploreCareer'
 import Education from './component/Education'
 import CareerTest from './component/CareerTest'
+import Footer from './Pages/Footer'
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,7 +25,7 @@ function App() {
 
     </Routes>
     </div>
-
+<Footer />
   </BrowserRouter>
    </>
   )
