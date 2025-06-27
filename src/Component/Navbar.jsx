@@ -23,7 +23,7 @@ const Navbar = () => {
     <header className="w-full fixed top-0 left-0 z-50 bg-white backdrop-blur  border-b font-mono border-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex bold items-center gap-2 text-xl font-semibold text-black" onClick={() => setMenuOpen(false)}>
+        <Link to="/" className="flex bold items-center gap-2 text-xl  text-black" onClick={() => setMenuOpen(false)}>
           <BookOpenCheck className="h-5 w-5 text-blue-600" />
           <span>CareerGuide</span>
         </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.href}
-              className={`flex items-center font-bold gap-1 text-1xl  transition-colors ${
+              className={`flex items-center font-sans font-bold gap-1 text-1xl  transition-colors ${
                 location.pathname === item.href
                   ? "text-blue-600"
                   : "text-black hover:text-blue-500"
@@ -47,7 +47,7 @@ const Navbar = () => {
         </nav>
 
         {/* Auth Buttons (Desktop) */}
-        <div className="hidden md:flex gap-2">
+        <div className="hidden  md:flex gap-2">
           <Link to="/login" className="text-sm text-black hover:text-blue-500 flex items-center gap-1">
             <LogIn className="w-4 h-4 text-blue-600" /> Log in
           </Link>

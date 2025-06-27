@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import Navbar from './component/Navbar'
 import Home from './component/Home'
-import ExploreCareer from './component/ExploreCareer'
-import Education from './component/Education'
+import ExploreCareer from './Component/Explore'
+
 import CareerTest from './component/CareerTest'
 import Footer from './Pages/Footer'
+import Education from './Component/Educations'
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
