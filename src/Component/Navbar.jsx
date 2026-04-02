@@ -17,7 +17,7 @@ const navItems = [
 const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [resourceOpen, setResourceOpen] = useState(false);
+  // const [resourceOpen, setResourceOpen] = useState(false);
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-white backdrop-blur  border-b font-mono border-gray-300">
